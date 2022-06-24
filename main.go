@@ -8,6 +8,9 @@ import (
 
 func main() {
 	input := os.Args[1]
-	res := len(strings.Split(input, " "))
+	res := 0
+	if len(input) > 0 {
+		res = len(strings.Split(input, " "))
+	}
 	fmt.Print(res)
 }
